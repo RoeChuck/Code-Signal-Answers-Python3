@@ -13,18 +13,24 @@ solution(inputString) = "foorabbaz";
 """
 # My solution:
 
-def solution(inputString):
-    input_list = list(inputString)
-    answer = []
-    for i in inputString:
-        if i == ")":
-            temp_stack = []
-            while answer[-1] != "(":
-                temp_stack += answer.pop()
-            answer.pop()
-            answer.extend(temp_stack)
-        else:
-            answer.append(i)
-    return "".join(answer)
+from turtle import st
 
-print(solution("sd(f(fsdfd)dfd)df(sd(dfd)dfdf)"))
+
+def sln1(inS):
+    input_list = list(inS)
+    ans = []
+    for i in inS:
+        if i == ")":
+            t_st = []
+            while ans[-1] != "(":
+                t_st += ans.pop()
+            ans.pop()
+            ans.extend(t_st)
+        else:
+            ans.append(i)
+    return "".join(ans)
+
+# there are multiple ways to do this, you could also check for occurance of '(' and set a start index and ')' as end 
+# index and flip, and use recursion to solve it. It would look something like this (not my solution):
+
+def sln2(iS):
