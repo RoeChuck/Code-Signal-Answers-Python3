@@ -21,11 +21,11 @@ def sln1(inS):
     ans = []
     for i in inS:
         if i == ")":
-            t_st = []
+            temp_stack = []
             while ans[-1] != "(":
-                t_st += ans.pop()
+                temp_stack += ans.pop()
             ans.pop()
-            ans.extend(t_st)
+            ans.extend(temp_stack)
         else:
             ans.append(i)
     return "".join(ans)
