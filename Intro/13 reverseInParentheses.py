@@ -33,11 +33,13 @@ def sln1(inS):
 # there are multiple ways to do this, you could also check for occurance of '(' and set a start index and ')' as end 
 # index and flip, and use recursion to solve it. It would look something like this (not my solution):
 
-def sln2(iS):
-    for i, v in enumerate(iS):
-        if v == ")":
-            s = i
-        if v == "(":
-            e = i
-            return sln2(iS[:s]+iS[e-1:s:-1]+s[e+1:])
+def sln2(s):
+    for i in range(len(s)):
+        if s[i] == "(":
+            start = i
+        if s[i] == ")":
+            end = i
+            return sln2(s[:start] + s[start+1:end][::-1] + s[end+1:])
     return s
+
+print(sln2("fsf(fsiftdfjd(sdfsqf(fdsedf)fysfd)fsdfsdf)fdshsg"))
