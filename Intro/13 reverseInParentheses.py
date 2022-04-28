@@ -26,3 +26,5 @@ def solution(inputString):
         else:
             answer.append(i)
     return "".join(answer)
+
+print(solution("sd(f(fsdfd)dfd)df(sd(dfd)dfdf)"))
