@@ -34,3 +34,10 @@ def sln1(inS):
 # index and flip, and use recursion to solve it. It would look something like this (not my solution):
 
 def sln2(iS):
+    for i, v in enumerate(iS):
+        if v == ")":
+            s = i
+        if v == "(":
+            e = i
+            return sln2(iS[:s]+iS[e-1:s:-1]+s[e+1:])
+    return s
