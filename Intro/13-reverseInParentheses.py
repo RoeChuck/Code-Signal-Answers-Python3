@@ -35,10 +35,10 @@ def sln1(inS):
 
 
 def sln2(s):
-    for i in range(len(s)):
-        if s[i] == "(":
+    for i, v in enumerate(s):
+        if v == "(":
             start = i
-        if s[i] == ")":
+        if v == ")":
             end = i
             return sln2(s[:start] + s[start+1:end][::-1] + s[end+1:])
     return s
