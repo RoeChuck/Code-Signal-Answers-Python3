@@ -21,4 +21,4 @@ def solution(ar1):
             # times you'd have to increment it by to make it 1 more than previous
             increment_num += prev - current + 1 
             prev += 1
-    return increment_num 
+    return increment_num
