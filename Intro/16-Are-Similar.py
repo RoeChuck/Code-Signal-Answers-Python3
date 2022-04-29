@@ -36,3 +36,6 @@ def solution(a, b):
             return True
         else:
             return False
+
+# Using lots of if statements to check and account for every case while using temp_stack to keep track of the amount of
+# mismatches so you can check later if 2 mismatches are the same
