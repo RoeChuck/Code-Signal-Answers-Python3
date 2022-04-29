@@ -9,6 +9,7 @@
 # solution(inputString) = "rab";
 # For inputString = "foo(bar)baz", the output should be
 # solution(inputString) = "foorabbaz";
+
 # My solution:
 
 from turtle import st
