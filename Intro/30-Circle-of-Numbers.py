@@ -7,6 +7,10 @@
 # For n = 10 and firstNumber = 2, the output should be
 # solution(n, firstNumber) = 7.
 
-# make list of range then 
-def solution(n, firstNumber):
+# make list of range then
+def mysolution(n, firstNumber):
     return list(range(n))[firstNumber-len(range(n))//2]
+
+# Better mathmatical solution:
+def notmysolution(n, firstNumber):
+    return (firstNumber + n/2)%n
