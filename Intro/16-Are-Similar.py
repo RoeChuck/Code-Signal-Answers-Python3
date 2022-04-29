@@ -45,3 +45,4 @@ def solution(a, b):
 
 def notmysolution(A, B):
     return sorted(A) == sorted(B) and sum([a != b for a, b in zip(A, B)]) <= 2
+# This works because True + True is 2
