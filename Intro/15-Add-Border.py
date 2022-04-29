@@ -1,20 +1,18 @@
-"""
-Add Border
-Given a rectangular matrix of characters, add a border of asterisks(*) to it.
+# Add Border
+# Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
-Example
+# Example
 
-For
+# For
 
-picture = ["abc",
-           "ded"]
-the output should be
+# picture = ["abc",
+#            "ded"]
+# the output should be
 
-solution(picture) = ["*****",
-                      "*abc*",
-                      "*ded*",
-                      "*****"]
-"""
+# solution(picture) = ["*****",
+#                       "*abc*",
+#                       "*ded*",
+#                       "*****"]
 
 
 def solution(picture):
