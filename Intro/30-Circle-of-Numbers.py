@@ -14,3 +14,5 @@ def mysolution(n, firstNumber):
 # Better mathmatical solution:
 def notmysolution(n, firstNumber):
     return (firstNumber + n/2)%n
+
+# Used the time module to check the time on both codes, they are the same
