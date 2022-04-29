@@ -1,6 +1,6 @@
 # Are Similar?
 
-# Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of 
+# Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of
 # the arrays.
 
 # Given two arrays a and b, check whether they are similar.
@@ -40,4 +40,8 @@ def solution(a, b):
 
 # Using lots of if statements to check and account for every case while using temp_stack to keep track of the amount of
 # mismatches so you can check later if 2 mismatches are the same
-# Someone more clever than me had a different way of thinking about it:
+# Someone more clever than me had a different way of thinking about it _top codesignal solution_:
+
+
+def notmysolution(A, B):
+    return sorted(A) == sorted(B) and sum([a != b for a, b in zip(A, B)]) <= 2
