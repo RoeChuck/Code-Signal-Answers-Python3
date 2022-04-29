@@ -1,16 +1,14 @@
 # reverseInParentheses
-"""
-Write a function that reverses characters in (possibly nested) parentheses in the input string.
+# Write a function that reverses characters in (possibly nested) parentheses in the input string.
 
-Input strings will always be well-formed with matching ()s.
+# Input strings will always be well-formed with matching ()s.
 
-Example
+# Example
 
-For inputString = "(bar)", the output should be
-solution(inputString) = "rab";
-For inputString = "foo(bar)baz", the output should be
-solution(inputString) = "foorabbaz";
-"""
+# For inputString = "(bar)", the output should be
+# solution(inputString) = "rab";
+# For inputString = "foo(bar)baz", the output should be
+# solution(inputString) = "foorabbaz";
 # My solution:
 
 from turtle import st
@@ -22,7 +20,7 @@ def sln1(inS):
     for i in inS:
         if i == ")":
             temp_stack = []
-            while ans[-1] != "(":
+            while ans[-1] != "(":  # Very neat trick to reverse and paste
                 temp_stack += ans.pop()
             ans.pop()
             ans.extend(temp_stack)
