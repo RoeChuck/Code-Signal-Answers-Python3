@@ -21,7 +21,7 @@ def solution(picture):
     final_output = []
     b = ''
 
-    # adds '*' to b (number of columns + 2) times
+    # add '*' to b (number of columns + 2) times
     for a in range(0, len(picture[0]) + 2):
         b += '*'
 
