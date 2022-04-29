@@ -9,3 +9,7 @@ Example
 For a = [50, 60, 60, 45, 70], the output should be
 solution(a) = [180, 105].
 """
+
+
+def solution(a):
+    return [sum(a[::2]), sum(a[1::2])]
