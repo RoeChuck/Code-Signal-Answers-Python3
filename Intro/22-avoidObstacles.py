@@ -34,7 +34,7 @@ def solution(inputArray):
 # Better way to do this:
 def notmysolution(inputArray):
     c = 2
-    while True:
-        if sorted([i%c for i in inputArray])[0]>0:
+    while True: # keep looping until you return c
+        if all(x%c!=0 for x in inputArray): # no inputarray element is multiple of c
             return c
-        c += 1
+        c += 1 # if not all inputarray element is multiple of c, check next c
