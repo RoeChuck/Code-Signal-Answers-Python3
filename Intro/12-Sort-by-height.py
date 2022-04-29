@@ -10,6 +10,7 @@ For a = [-1, 150, 190, 170, -1, -1, 160, 180], the output should be
 solution(a) = [-1, 150, 160, 170, -1, -1, 180, 190].
 """
 
+
 def solution(inputArray):
     ans = sorted([a for a in inputArray if a != -1])
     [ans.insert(i, -1) for i, v in enumerate(inputArray) if v == -1]
