@@ -10,4 +10,4 @@
 # white is when this sum is odd
 # given that, we can write a neat one line code:
 def solution(cell1, cell2):
-    return (ord(cell1[0]) + int(cell1[1]))%2 == (ord(cell2[0]) + int(cell2[1]))%2
+    return (ord(cell1[0]) + int(cell1[1])) % 2 == (ord(cell2[0]) + int(cell2[1])) % 2
