@@ -23,3 +23,16 @@ Any swap of any two elements either in a or in b won't make a and b equal.
 """
 
 def solution(a, b):
+    temp_stack = []
+    for i, v in enumerate(a):
+        if v not in b[i]:
+            temp_stack.append(i)
+    if len(temp_stack) > 2:
+        return False
+    elif len(temp_stack) == 0:
+        return True
+    elif len(temp_stack) == 2:
+        if a[temp_stack[0]] == b[temp_stack[1]] and a[temp_stack[1]] == b[temp_stack[0]]:
+            return True
+        else:
+            return False
