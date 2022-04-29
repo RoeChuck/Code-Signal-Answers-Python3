@@ -5,3 +5,6 @@
 # For inputArray = [1, 2, 1], elemToReplace = 1, and substitutionElem = 3, the output should be
 # solution(inputArray, elemToReplace, substitutionElem) = [3, 2, 3].
 
+# using list comprehension as long as it's readable
+def solution(inputArray, elemToReplace, substitutionElem):
+    return [a if not a == elemToReplace else substitutionElem for a in inputArray]
