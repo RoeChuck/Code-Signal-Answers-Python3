@@ -12,24 +12,21 @@
 # My first solution is more complicated than it needs to be:
 
 def solution(inputArray):
-    inputArray.sort()
-    a_ans = int()
     # loop for potential answer, +2 to include one more than the max item
     for p_ans in range(2, max(inputArray) + 2):
         flag = False
-        for i in inputArray:
+        for i in sorted(inputArray):
             if i % p_ans == 0:  # condition1 - i is multiple of p_ans - can't be actual answer
                 flag = True
                 break
             # condition2- i not multiple of p_ans (p_ans could be ans) - continue to check next i
             elif i % p_ans != 0:
-                a_ans = p_ans
                 continue
         if flag == True:  # condition1: check with next p_ans
             continue
         else:  # condition 2: return p_ans bc its the answer
             return p_ans
-    return a_ans
+    return p_ans
 
 
 # Better way to do this:
