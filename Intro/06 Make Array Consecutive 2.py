@@ -19,6 +19,7 @@ in the new list which is the minimum number of statues needed
 def solution(statues):
     return len(range(min(statues), max(statues) + 1)) - len(statues)
 
+
 # A simpler way to do this comes when you realize you can just subtract the max(statues) with min(statues)
 # to get the length of the new list that I created above. This is a more efficient way to do this with less
 # operations
