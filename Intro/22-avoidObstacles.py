@@ -21,20 +21,21 @@ def solution(inputArray):
             if i % p_ans == 0:  # condition1 - i is multiple of p_ans - can't be actual answer
                 flag = True
                 break
-            elif i % p_ans != 0:  # condition2- i not multiple of p_ans (p_ans could be ans) - continue to check next i
+            # condition2- i not multiple of p_ans (p_ans could be ans) - continue to check next i
+            elif i % p_ans != 0:
                 a_ans = p_ans
-                continue 
+                continue
         if flag == True:  # condition1: check with next p_ans
             continue
         else:  # condition 2: return p_ans bc its the answer
             return p_ans
-    return a_ans 
+    return a_ans
 
 
 # Better way to do this:
 def notmysolution(inputArray):
     c = 2
-    while True: # keep looping until you return c
-        if all(x%c!=0 for x in inputArray): # no inputarray element is multiple of c
+    while True:  # keep looping until you return c
+        if all(x % c != 0 for x in inputArray):  # no inputarray element is multiple of c
             return c
-        c += 1 # if not all inputarray element is multiple of c, check next c
+        c += 1  # if not all inputarray element is multiple of c, check
