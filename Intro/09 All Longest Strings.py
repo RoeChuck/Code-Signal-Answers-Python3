@@ -12,6 +12,6 @@ solution(inputArray) = ["aba", "vcd", "aba"].
 # Straightforward 2 liner
 
 
-def solution(inputArray):
-    max_length = max([len(str(a)) for a in inputArray])
-    return [e for e in inputArray if len(e) == max_length]
+def solution(input_array):
+    max_length = max([len(str(a)) for a in input_array])
+    return [e for e in input_array if len(e) == max_length]

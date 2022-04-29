@@ -1,5 +1,5 @@
 # Make Array Consecutive 2
-# Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an
+# Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having a
 # non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest
 # to largest so that each statue will be bigger than the previous one exactly by 1. He may need some
 # additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.
@@ -21,7 +21,7 @@ def solution(statues):
 
 
 # A simpler way to do this comes when you realize you can just subtract the max(statues) with min(statues)
-# to get the length of the new list that I created above. This is a more efficient way to do this with less
+# to get the length of the new list that I created above. This is a more efficient way to do this with fewer
 # operations
 
 
